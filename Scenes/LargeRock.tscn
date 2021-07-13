@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Kenny Pirate/PNG/Default size/Tiles/tile_50.png" type="Texture" id=1]
+
+[node name="Rock" type="KinematicBody2D"]
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 5.3, -20, 17.3224, -18.0172, 21, -17.7, 31, -5.7, 30.1285, 6.7579, 28.9792, 12.8648, 27.7, 14, 12.7, 27, 5.6, 27, -23, 15, -27, 12, -27, 7.7, -24.5, -1.5, -30.6235, -13.9437, -28.5, -17, -14, -25.1, -10.4431, -26.4452 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
