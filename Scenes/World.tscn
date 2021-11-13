@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Kenny Pirate/Tilesheet/tiles_sheet.png" type="Texture" id=2]
-[ext_resource path="res://Scenes/LargeRock.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/World Objects/LargeRock.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/World Objects/WoodBlock.tscn" type="PackedScene" id=4]
 
 [sub_resource type="TileSet" id=1]
 0/name = "tiles_sheet.png 0"
@@ -58,6 +59,12 @@ tile_data = PoolIntArray( 0, 0, 0, 65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 131074
 
 [node name="Rock" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1140.26, 492.765 )
+
+[node name="Wood" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1062, 648 )
+
+[node name="Wood2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1086, 632 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 957.694, 542.612 )

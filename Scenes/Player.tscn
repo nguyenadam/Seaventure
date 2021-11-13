@@ -3,7 +3,7 @@
 [ext_resource path="res://Assets/Kenny Shooter/PNG/Hitman 1/hitman1_gun.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player.gd" type="Script" id=2]
 [ext_resource path="res://Scenes/BasicBubbleBullet.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Assets/Kenny Shooter/PNG/Tiles/tile_359.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=4]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 9.2174
@@ -28,16 +28,6 @@ shape = SubResource( 1 )
 current = true
 zoom = Vector2( 0.5, 0.5 )
 
-[node name="Health" type="RichTextLabel" parent="."]
-margin_left = -414.206
-margin_top = -257.206
-margin_right = -343.206
-margin_bottom = -217.206
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Sprite2" type="Sprite" parent="."]
-position = Vector2( -443.75, -237.384 )
-scale = Vector2( 0.690291, 0.690291 )
-texture = ExtResource( 4 )
+[node name="HUD" parent="." instance=ExtResource( 4 )]
+position = Vector2( -383, -206 )
+z_index = 50
